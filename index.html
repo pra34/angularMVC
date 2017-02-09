@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>UI Router Demo App - Multiple,Nested States & Views</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	</head>
+
+	<body class="container" ng-app='routingDemoApp'>
+		
+		<div class="row">
+			<div class="span12">
+				<div class="well" ui-view></div>        
+			</div>
+		</div>
+
+		<!-- library files -->
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/ngStorage/ngStorage.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<!-- end of library files -->
+
+		<!-- javascript files -->
+		<script src="app.module.js"></script>
+		<script src="factory/logger.js"></script>
+
+		<script src="modules/login/login.module.js"></script>
+		<script src="modules/login/login.controller.js"></script>
+
+		<script src="modules/business/business.module.js"></script>
+		<script src="modules/business/business.controller.js"></script>
+		
+		<script src="modules/product/product.controller.js"></script>
+		
+		<script src="modules/services/services.controller.js"></script>
+		
+		<script src="modules/portfolio/portfolio.controller.js"></script>
+
+		<script src="modules/clients/client.controller.js"></script>
+		<!--end of javascript files -->
+	</body>
+</html>
